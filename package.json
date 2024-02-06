@@ -2,7 +2,6 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "install": "npm install phantomjs-prebuilt@2.1.13 --ignore-scripts -f && npm install -f",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
