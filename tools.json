@@ -1,0 +1,30 @@
+{
+  "tools": {
+    "items": [
+      {
+        "id": 1,
+        "label": "Incluir",
+        "link": "/create",
+        "type": "front"
+      },
+      {
+        "id": 2,
+        "label": "Alterar",
+        "link": "/edit"
+      },
+      {
+        "id": 3,
+        "label": "Processar",
+        "link": "/processor",
+        "type": "back",
+        "disabled": "true"
+      },
+      {
+        "id": 4,
+        "label": "Visualizar",
+        "link": "/profile",
+        "type": "front"
+      }
+    ]
+  }
+}

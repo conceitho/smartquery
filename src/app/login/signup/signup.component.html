@@ -1,0 +1,15 @@
+<po-page-edit (p-save)="save()" (p-cancel)="cancel()" [p-title]="title">
+  <po-divider class="po-sm-12" p-label="Dados Usuario"></po-divider>
+
+  <po-input
+    class="po-md-5"
+    name="email"
+    [(ngModel)]="record.email"
+    p-label="Email"
+    p-help="Precisa ter: '@dominio' e um tipo de dominio, ex: .com .net etc"
+  >
+  </po-input>
+  <po-input class="po-md-5" name="name" [(ngModel)]="record.name" p-label="Nome"> </po-input>
+  <po-password class="po-md-5" name="password" [p-help]="helpPassword" [(ngModel)]="record.password" p-label="Senha">
+  </po-password>
+</po-page-edit>

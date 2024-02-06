@@ -1,0 +1,23 @@
+<po-page-default p-title="Outras ações">
+  <div class="po-row">
+    <po-input
+      name="alias"
+      class="po-md-4"
+      [p-maxlength]="3"
+      p-clean
+      p-placeholder="Alias ex: SB1"
+      p-label="Alias"
+      p-help="É um alias"
+      p-icon="po-icon-user"
+      [(ngModel)]="alias"
+      (ngModelChange)="alias = $event.toUpperCase()"
+    ></po-input>
+    <po-button class="po-md-3 po-mt-4" p-label="Carregar" (p-click)="handleFormStructView()"></po-button>
+  </div>
+  <po-loading-overlay *ngIf="isLoading" [p-screen-lock]="false" p-text="Buscando Carregando"> </po-loading-overlay>
+
+  <div class="po-mt-3">
+    <po-dynamic-form class="po-mt-3" *ngIf="fields.length > 0" #dynamicForm p-auto-focus="name" [p-fields]="fields">
+    </po-dynamic-form>
+  </div>
+</po-page-default>

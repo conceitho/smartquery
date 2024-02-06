@@ -1,0 +1,6 @@
+<po-button-group class="po-md-12" [p-buttons]="buttons" [routerLink]="link"> </po-button-group>
+
+<po-page-dynamic-table [p-page-custom-actions]="pageActions" p-service-api="http://localhost:9898/people"
+  p-concat-filters p-keep-filters p-title="Consulta personalizada" [p-auto-router]="true" [p-height]="500"
+  [p-hide-columns-manager]="true" [p-infinite-scroll]="true" [p-actions]="actions" [p-fields]="fields">
+</po-page-dynamic-table>
